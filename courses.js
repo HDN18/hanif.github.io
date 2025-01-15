@@ -17,6 +17,6 @@ function generateBox(team) {
 }
 
 fetch ('https//fahram.dev/api/v2/courses')
-.then(response => Response.json())
+.then(response => response.json())
 
-.then(data => data.data.forEach(couse => generateBox(course)))
+.then(data => data.data.forEach(course => generateBox(course)))
