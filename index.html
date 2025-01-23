@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="teams.css"> -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+            width: 90%;
+            margin: 90px auto;  
+        }
+        [class*='box']{
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .media{
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            height: 100px;
+            width: 100px;
+            float: right;
+            margin: 10px;
+            background-position: center;
+            background-size: cover;
+        }
+
+       .box{
+        position: relative;
+      width: 200px;
+      height: 300px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s; 
+       }
+
+
+        .box-1{
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .box-1 > .media{
+            width: 100%;
+            height: 250px;
+            margin-bottom: 20px;
+            background-image: url(lp3i.jpg);
+            border-radius: 0;
+            margin-top: 0;
+            margin-right: 0;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px;
+            margin-top: 0;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); 
+        }
+
+        ul :hover{
+            background-color: rgb(182, 182, 224);
+            transition: .2s ease-in-out;
+            border-radius: 40px;
+        }
+
+        li{
+            padding: 10px;
+        }
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color:black;
+            min-height: 100vh;
+            width: 100%;
+            height: 90%;
+        }
+        .box-1 > .media{
+            padding-left: 10px;
+            background-image: url(https://i.pinimg.com/236x/b6/bc/a1/b6bca1875466634bf0bdc6dcd53614b1.jpg);
+        }
+        .box-2 .media{
+            background-image: url(https://i.pinimg.com/736x/da/3c/36/da3c36ab7d12285e143e25c4741d3d3e.jpg);
+        }
+        .box-3 .media{
+            background-image: url(https://i.pinimg.com/736x/26/f5/23/26f523ef4a3f6ed2100d59f86da12300.jpg);
+        }
+        .box-4 .media{
+            background-image: url(http://surl.li/syxsoo);
+        }
+        .box-5 .media{
+            background-image: url(https://i.pinimg.com/236x/69/e2/b3/69e2b3be6001c33141a95557a5f2cbcd.jpg);
+        }
+        .box-6 .media{
+            background-image: url(https://static.vecteezy.com/system/resources/previews/025/270/403/non_2x/github-logo-icon-free-vector.jpg);
+        }
+        .box-7 .media{
+            background-image: url(https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2019/01/what-is-ajax.jpg);
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        p{
+            color: grey;
+        }
+        @media only screen and (max-width: 768px){
+            .container, ul{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Teams.html">Teams</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="course.html">Course</a></li>
+        <li><a href="portofolio.html">Portofolio</a></li>
+    </ul> -->
+    <div class="container">
+        <div class="box-1">
+            <div class="media"></div>
+            <h3>LP3I Banten</h3>
+            <p>LP3I College adalah lembaga pendidikan 2 tahun siap kerja yang dibekali dengan program pendidikan dengan ilmu terapan yang spesifik. Setiap lulusan dari LP3I College akan mendapatkan sertifikasi profesi yang dapat digunakan untuk mendapatkan kerja.. <br> 
+            LP3I Collage memiliki jurusan sebagai berikut :<br>
+            <li>Digital Bussines Management</li>
+            <li>Accounting Informatin System</li>
+            <li>Application Software Enggenering</li>
+            <li>Office Administration Automatization</li>
+            <li>Professional Administratif Assistant</li>
+        </p>
+
+            </div>
+        <div class="box-2">
+            <div class="media"></div>
+            <h3>Pengenalan dan Struktur Dasar HTML</h3>
+            <p>HTML adalah singkatan dari Hypertext Markup Language,
+                Belajar Atribut HTML, Basic Elemen, Teks Terformat, Semantic HTML, Table and List, Link, Image, dan Form</p>
+            <p>3 Bulan yang lalu</p>
+        </div>
+        <div class="box-3">
+            <div class="media"></div>
+            <h3>Pengenalan Style dan Penulisan CSS</h3>
+            <p>Belajar Cara Menambahkan CSS, Color, Background, Formatting Text, Text Styling, Box Element, Border, Padding and Margin, Box Shadow & Rounded Corner, Positioning</p>
+            <p>2 Bulan yang lalu</p>
+        </div>
+        <div class="box-4">
+            <div class="media"></div>
+            <h3>Layout Responsif</h3>
+            <p>Belajar Meta Viewport, Media Query, Flexbox, and Grid</p>
+            <p>2 Bulan yang lalu</p>
+        </div>
+        <div class="box-5">
+            <div class="media"></div>
+            <h3>Pengenalan Javascript</h3>
+            <p>Belajar Dasar-dasar Javascript, Browser Object Model, Document Object Model, Event, Latihan Event & DOM</p>
+            <p>3 Minggu yang lalu</p>
+        </div>
+        <div class="box-6">
+            <div class="media"></div>
+            <h3>Publish</h3>
+            <p>DNS Server, Instalasi Domain ID, Menggunakan Hosting GitHub Page</p>
+            <p>3 Minggu yang lalu</p>
+        </div>
+        <div class="box-7">
+            <div class="media"></div>
+            <h3>AJAX</h3>
+            <p>Belajar Pengenalan AJAX, Request, Fecth API</p>
+            <p>2 Minggu yang lalu</p>
+        </div>
+    </div> 
+</body>
+<script src="menu.js"></script>
+</html>
