@@ -231,7 +231,7 @@ const teams = [
             
             {
                 "name" : "globe",
-                "link" : "https://rheinawardianahafiroh.my.id/"
+                "link" : "https://reina.html/"
             },
 
             {
