@@ -5,6 +5,7 @@ let menuItems = [
     {Text: 'Blog', Url: '/blog.html'},
     {Text: 'Course', Url: '/course.html'},
     {Text: 'Portofolio', Url: '/portofolio.html'},
+     {Text: 'Undangan', Url: '/undangan.html'},
 ]
 
 let menu = document.createElement('ul')
